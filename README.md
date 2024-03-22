@@ -6,10 +6,13 @@ This Python program is designed to solve word search puzzles. It allows users to
 
 - **Find Word Functionality:** The program can find and highlight multiple words in the word search grid.
 - **Directional Search:** Utilizes a depth-first search algorithm to search for words in all 8 potential directions.
+- **Case Insensitive Search:** Converts the input text to lowercase for case-insensitive search.
 
 ## Files
 
 - **wordSearchSolver.py:** Contains the main functionality for solving the word search puzzle.
+- **output.txt:** Text file containing the initial word search from the image, preprocessed into the correct format.
+- **output2.txt:** Text file containing the output of the `convertToLower()` function in `wordSearchSolver.py`.
 - **Screenshot 2023-12-24 143156.jpg:** Image of the word search puzzle processed through OCR.
 
 ## OCR Used

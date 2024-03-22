@@ -5,7 +5,7 @@ def find_word(wordsearch, word):
                 if search_dir(wordsearch, word, (i, j)):
                     print(f"Word '{word}' found at position ({i}, {j})")
                     return
-    print(f"Word '{word}' not found in the wordsearch")
+    print(f"Word '{word}' not found")
 
 def search_dir(wordsearch, word, start_pos):
     directions = [(-1, -1), (-1, 0), (-1, 1), (0, 1), (1, 1), (1, 0), (1, -1), (0, -1)]
@@ -39,3 +39,37 @@ def search_dir(wordsearch, word, start_pos):
             return True
 
     return False
+
+def convertToLower():
+    input_txt_path = r'C:\Users\arunm\Desktop\word search\output.txt'
+    output_txt_path = r'C:\Users\arunm\Desktop\word search\output2.txt'
+
+    try:
+        with open(input_txt_path, 'r') as input_file:
+            content = input_file.read()
+
+            lowercase = content.lower()
+
+            with open(output_txt_path, 'w') as output_file:
+                output_file.write(lowercase)
+        print(f"Successfully converted text to lowercase.")
+
+    except FileNotFoundError:
+        print(f'Error: File {input_txt_path} not found.')
+
+convertToLower()
+# import wordsearch
+print('')
+file = input('What file contains the word search that you want to solve: ')
+wordsearch = open(file).read().splitlines()
+print(wordsearch)
+
+num_words = int(input('How many words do you ant to find: '))
+word_list = []
+
+for i in range(num_words):
+    word = input("Enter a word: ")
+    word_list.append(word)
+print(word_list)
+for word in word_list:
+    find_word(wordsearch, word)
