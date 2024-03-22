@@ -13,7 +13,7 @@ This Python program is designed to solve word search puzzles. It allows users to
 - **wordSearchSolver.py:** Contains the main functionality for solving the word search puzzle.
 - **output.txt:** Text file containing the initial word search from the image, preprocessed into the correct format.
 - **output2.txt:** Text file containing the output of the `convertToLower()` function in `wordSearchSolver.py`.
-- **Screenshot 2023-12-24 143156.jpg:** Image of the word search puzzle processed through OCR.
+- **Screenshot 2024-03-23 015203.png:** Image of the word search puzzle processed through OCR.
 
 ## OCR Used
 
