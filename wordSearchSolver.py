@@ -7,6 +7,7 @@ def find_word(wordsearch, word):
                     return
     print(f"Word '{word}' not found")
 
+
 def search_dir(wordsearch, word, start_pos):
     directions = [(-1, -1), (-1, 0), (-1, 1), (0, 1), (1, 1), (1, 0), (1, -1), (0, -1)]
 
@@ -40,9 +41,10 @@ def search_dir(wordsearch, word, start_pos):
 
     return False
 
+
 def convertToLower():
-    input_txt_path = r'C:\Users\arunm\Desktop\word search\output.txt'
-    output_txt_path = r'C:\Users\arunm\Desktop\word search\output2.txt'
+    input_txt_path = 'output.txt'
+    output_txt_path = 'output2.txt'
 
     try:
         with open(input_txt_path, 'r') as input_file:
@@ -57,7 +59,8 @@ def convertToLower():
     except FileNotFoundError:
         print(f'Error: File {input_txt_path} not found.')
 
-convertToLower()
+
+# convertToLower()
 # import wordsearch
 print('')
 file = input('What file contains the word search that you want to solve: ')
